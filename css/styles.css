@@ -441,6 +441,31 @@ ul{
 .link-footer:focus{
     background-color: #31d0aa;
 }
+.foot-container-input{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 16px;
+        position: relative;
+}
+.foot-label{
+    display: flex;
+        flex-direction: column;
+        font-weight: 500;
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+            color: #fff;
+}
+.button-foot{
+    color: #fff;
+    border-radius: 4px;
+        padding: 8px 24px;
+        width: 165px;
+        height: 40px;
+    background: #4d5ae5;
+}
 
 h1,h2,h3,h4,h5,h6,p,ul{
 
@@ -519,6 +544,9 @@ img{
 .form-input:focus{
     border: 1px solid #4d5ae5;
 }
+.form-input:hover{
+border: 1px solid #4d5ae5;
+}
 
 
 .modal-close{
@@ -574,8 +602,16 @@ input::placeholder{
         padding-left: 16px;
         padding-top: 8px;
         resize: none;
-        
+         outline: transparen
 }
+
+ .textarea:focus {
+     border: 1px solid #4d5ae5;
+ }
+
+ .textarea:hover {
+     border: 1px solid #4d5ae5;
+ }
 .form-button{
     margin: 0 auto;
     border-radius: 4px;
