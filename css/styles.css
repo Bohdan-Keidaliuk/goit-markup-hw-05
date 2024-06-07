@@ -772,7 +772,7 @@ margin-bottom: 24px;
 
 .checkbox:checked + .label-checkbox > .span-checkbox-icon{
 background-color: #404bbf;
-    fill: #ffffff;
+    fill: #F4F4FD;;
     border: none;
     
 }
