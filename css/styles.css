@@ -442,12 +442,13 @@ ul{
     background-color: #31d0aa;
 }
 .foot-container-input{
-    display: flex;
+    display: block;
         align-items: center;
         justify-content: center;
         flex-direction: row;
         gap: 16px;
         position: relative;
+        margin-left: 80px;
 }
 .foot-titel-form{
     margin-bottom: 16px;
@@ -508,6 +509,7 @@ color: #ffffff;
 }
 .foot-icon{
     margin-left: 16px;
+    fill: #ffffff;
 }
 
 h1,h2,h3,h4,h5,h6,p,ul{
@@ -623,14 +625,16 @@ fill: #4D5AE5;
 
         
 }
-.modal-close:hover{
+
+.modal-close:hover,
+.modal-close:focus {
     background-color: #404bbf;
     border: none;
-    fill: #ffffff;
+
 }
-.modal-close:focus{
-background-color: #404bbf;
-    border: none;
+
+.modal-close:hover .icon-modal,
+.modal-close:focus .icon-modal {
     fill: #ffffff;
 }
 .icon-modal{
@@ -680,7 +684,7 @@ input::placeholder{
     border: 1px solid rgba(46, 47, 66, 0.4);
         border-radius: 4px;
         background-color: transparent;
-        width: 100%;
+        width: 360px;
         height: 120px;
         font-size: 12px;
         line-height: 1.17;
@@ -774,7 +778,8 @@ margin-bottom: 24px;
        margin-top: 16px;
 }
 .checkbox:checked + .label-checkbox > .span-checkbox-icon{
-    background-color: #404bbf;
+background-color: #404bbf;
+    fill: #ffffff;
     border: none;
-    fill: #F4F4FD;
+    transition: transform 250 ms cubic-bezier(0.4, 0, 0.2, 1);
 }
